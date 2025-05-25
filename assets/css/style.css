@@ -24,6 +24,7 @@ body {
 
 .right {
     width: 75vw;
+    position: relative;
 }
 
 .home ul li {
@@ -156,4 +157,17 @@ body {
     font-weight: bold;
     width: 93px;
     font-size: 17px;
+}
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: #1ed760;
+    width: 100%;
+    padding: 12px;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    
 }
