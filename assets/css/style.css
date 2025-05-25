@@ -48,12 +48,16 @@
 }
 .library{
     min-height: 50vh;
+    position: relative;
 }
 .footer{
     display: flex;
     font-size: 10px;
     color: grey;
     gap: 13px;
+    position: absolute;
+    bottom: 0;
+    
 
 }
 .footer a {
