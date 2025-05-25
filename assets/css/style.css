@@ -84,6 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
+    height: 70px;
 }
 
 .header>* {
@@ -123,14 +124,36 @@ body {
     opacity: 1;
     transition: all 1s ease-out;
 }
+.buttons > *{
+    margin: 0 12px;
+}
 .signupbtn{
-    background-color: black;
-    color: rgb(151, 149, 149);
+    background-color: rgb(34, 34, 34);
+    color: rgb(168, 160, 160);
     font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
 
 }
 .signupbtn:hover{
-    font-size: 1.1rem;
+    font-size: 17px;
     color: white;
 
+}
+.loginbtn{
+    background-color: #1ed760;
+    border-radius: 24px;
+    color: black;
+    padding: 11px;
+    width: 90px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    background-color: #f0f0f0;
+    font-weight: bold;
+    width: 93px;
+    font-size: 17px;
 }
