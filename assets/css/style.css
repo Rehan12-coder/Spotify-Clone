@@ -162,7 +162,7 @@ body {
     position: absolute;
     bottom: 0;
     background-color: #1ed760;
-    width: 100%;
+    width: 88%;
     padding: 12px;
 }
 .songbuttons{
@@ -170,4 +170,26 @@ body {
     justify-content: center;
     gap: 12px;
     
+}
+.songList ul{
+    padding: 0 12px;
+
+}
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+    padding: 12px 0;
+
+
+}
+.playnow{
+    display: flex;
+
+}
+.playnow span{
+    font-size: 10px;
+    width: 64px;
+
 }
