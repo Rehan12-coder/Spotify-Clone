@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify | Remake</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/utility.css">
 </head>
@@ -13,7 +14,7 @@
     <div class="container flex bg-black">
         <div class="left">
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img class="invert" src="assets/images/logo.svg" alt="logo"></div>
+                <div class="logo"><img width="110px" class="invert" src="assets/images/logo.svg" alt="logo"></div>
                 <ul>
                     <li><img class="invert" src="assets/images/home.svg" alt="Home">Home</li>
                     <li><img class="invert" src="assets/images/search.svg" alt="search">Search</li>
@@ -24,6 +25,11 @@
                     <img class="invert" src="assets/images/playlist.svg" alt="library">
                     <h2>Your Library</h2>
                 </div>
+                  <div class="songList">
+                        <ul>
+                          
+                        </ul>
+                    </div>
                 <footer class="footer">
                     <div><a href="https://www.spotify.com/pk-en/legal/" data-encore-id="textLink" id=""><span
                                 data-encore-id="type">Legal</span></a></div>
@@ -165,13 +171,18 @@
 
                 </div>
                 <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
                     <div class="songinfo"></div>
                     <div class="songbuttons">
-                        <img src="assets/images/prevsong.svg" alt="">
-                        <img src="assets/images/play.svg" alt="">
-                        <img src="assets/images/nextsong.svg" alt="">
+                        <img id="previous" src="assets/images/prevsong.svg" alt="">
+                        <img id="play" src="assets/images/play.svg" alt="">
+                        <img id="next" src="assets/images/nextsong.svg" alt="">
                     </div>
                     <div class="songtime"></div>
+                    </div>
                 </div>
             </div>
         </div>
