@@ -47,13 +47,17 @@
     width: 20px;
 }
 .library{
+    position: relative;
     min-height: 50vh;
 }
 .footer{
+    position: absolute;
     display: flex;
     font-size: 10px;
     color: grey;
     gap: 13px;
+    bottom: 0;
+    
 
 }
 .footer a {
