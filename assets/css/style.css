@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --a:0;
+}
 
 
 * {
@@ -131,7 +134,13 @@ body {
     border-radius: 5px;
     background-color: #252525;
     position: relative;
+    transition: all .9s;
 
+}
+.card:hover{
+    background-color: rgb(107, 103, 103);
+    cursor: pointer;
+    --a:1;
 }
 
 .card>* {
@@ -147,7 +156,7 @@ body {
     position: absolute;
     top: 164px;
     right: 17px;
-    opacity: 1;
+    opacity:var(--a);
     transition: all 1s ease-out;
 }
 
