@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --a:0;
+    --a: 0;
 }
 
 
@@ -97,6 +97,7 @@ body {
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
     height: 70px;
+    position: sticky;
 }
 
 .header nav {
@@ -137,10 +138,11 @@ body {
     transition: all .9s;
 
 }
-.card:hover{
+
+.card:hover {
     background-color: rgb(107, 103, 103);
     cursor: pointer;
-    --a:1;
+    --a: 1;
 }
 
 .card>* {
@@ -154,9 +156,9 @@ body {
 
 .play {
     position: absolute;
-    top: 164px;
+    bottom: 108px;
     right: 17px;
-    opacity:var(--a);
+    opacity: var(--a);
     transition: all 1s ease-out;
 }
 
@@ -207,6 +209,9 @@ body {
     filter: invert(1);
     border-radius: 10px;
     min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .songbuttons {
@@ -347,7 +352,8 @@ body {
     cursor: pointer;
 
 }
-.range input{
+
+.range input {
     cursor: pointer;
 }
 
@@ -363,7 +369,7 @@ body {
 @media (max-width: 1200px) {
     .left {
         background-color: black;
-        left: -110%;
+        left: -130%;
         position: absolute;
         transition: all 0.5s ease-in-out;
         z-index: 1;
@@ -397,12 +403,15 @@ body {
     .cardContainer {
         justify-content: center;
         margin: 0;
+        margin-bottom: 40vh;
     }
+ 
 
     .playbar {
 
         width: calc(100vw - 75px);
         right: 24px;
+
 
     }
 
@@ -439,10 +448,18 @@ body {
 
 
     }
+
     .cardContainer {
 
-    max-height: 50vh;
-}
+        max-height: 50vh;
+    }
+
+    .left {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
 
 }
 
@@ -457,5 +474,69 @@ body {
         margin: 0;
         gap: 0;
 
+    }
+
+    .header>* {
+        padding: 2px;
+
+    }
+
+    .buttons>* {
+        margin: 0 6px;
+    }
+
+    .cardContainer {
+        max-height: unset;
+        overflow-y: unset;
+        margin-bottom: 40vh;
+    }
+
+    .left {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+
+    }
+
+    .cardContainer {
+        justify-content: center;
+        margin: 0;
+        gap: 0;
+
+    }
+
+    .header>* {
+        padding: 2px;
+
+    }
+
+    .buttons>* {
+        margin: 0 6px;
+    }
+
+    .cardContainer {
+        max-height: unset;
+        overflow-y: unset;
+        margin-bottom: 40vh;
+    }
+
+    .spotifyPlaylists h1 {
+        padding: 4px;
+    }
+
+    .library {
+        height: 80vh;
+    }
+
+    .left {
+        position: fixed;
+        top: 0;
+        width: 100vw;
     }
 }

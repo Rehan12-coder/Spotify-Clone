@@ -206,6 +206,11 @@ async function displayalbums() {
         document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
             currentSong.volume = parseInt(e.target.value) / 100;
             console.log("setting volume to " + e.target.value + " / 100");
+            if (currentSong.volume == 0) {
+                document.querySelector(".volume>img").src = "assets/images/mute.svg";
+            } else {
+                document.querySelector(".volume>img").src = "assets/images/volume.svg";
+            }
         });
         // Add an event listener to the mute button to toggle the mute state
         document.querySelector(".volume>img").addEventListener("click", (e) => {
