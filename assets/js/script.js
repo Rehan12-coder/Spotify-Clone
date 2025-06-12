@@ -15,11 +15,11 @@ async function getSongs(folder) {
         },
     })
     let response = await a.text();
-    console.log(response)
+    // console.log(response)
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
-    console.log(as)
+    // console.log(as)
     songs = [];
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
@@ -77,7 +77,7 @@ async function displayalbums() {
         },
     })
     let response = await a.text();
-    console.log(response)
+    // console.log(response)
     let div = document.createElement("div");
     div.innerHTML = response;
     let anchors = div.getElementsByTagName("a");
