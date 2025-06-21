@@ -1,135 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify | Log In</title>
-    <link rel="stylesheet" href="assets/css/utility.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        body {
-            min-height: 100vh;
-            background-color: black;
-            color: white;
-        }
-        .img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-            margin-top: 34px;
-        }
-        .form{
-             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 85vh;
-            background-color: black;
-            color: white;
-        }
+    <meta
+      name="description"
+      content="Log in to your Spotify account to access your music, playlists, and podcasts."
+    />
+    <meta
+      name="keywords"
+      content="Spotify, login, sign in, music streaming, playlists, podcasts"
+    />
+    <meta name="author" content="Spotify" />
+    <meta property="og:title" content="Spotify | Login" />
+    <meta
+      property="og:description"
+      content="Log in to your Spotify account to access your music, playlists, and podcasts."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.spotify.com/login" />
+    <meta
+      property="og:image"
+      content="https://www.spotify.com/assets/images/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Spotify | Login" />
+    <meta
+      name="twitter:description"
+      content="Log in to your Spotify account to access your music, playlists, and podcasts."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.spotify.com/assets/images/twitter-card.jpg"
+    />
+    <link rel="canonical" href="https://www.spotify.com/login" />
+    <title>Spotify | Login</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/utility.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
 
-        .box {
-            position: relative;
-            width: 380px;
-            height: 500px;
-        }
-
-        .box::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            filter: drop-shadow(0 15px 50px #000);
-            border-radius: 28px;
-            
-        }
-
-        .box::after {
-            content: "";
-            position: absolute;
-            inset: 4px;
-            background: #2d2d39;
-            border-radius: 15px;
-            border: 8px solid #25252b;
-        }
-
-
-        /* Login Form Styles */
-        .login-form {
-            position: absolute;
-            inset: 20px;
-            z-index: 2;
-            padding: 40px;
-            color: rgb(30, 215, 96);
-        }
-
-        .login-form h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2em;
-        }
-
-        .input-group {
-            margin-bottom: 30px;
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 12px;
-            background: #3a3a45;
-            border: none;
-            border-radius: 5px;
-            color: rgb(255, 255, 255);
-            font-size: 1em;
-        }
-
-        .input-group input:focus {
-            outline: 2px solid rgb(30, 215, 96);
-        }
-
-        .login-btn {
-            width: 100%;
-            padding: 12px;
-            background: rgb(30, 215, 96);
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .login-btn:hover {
-            background: #f0f0f0;
-        }
-    </style>
-</head>
-<body>
-    <div class="img">
-        <img width="300px" class="invert" src="assets/images/logo.svg" alt="">
-    </div>
-    <div class="form">
-
-        <div class="box">
-            <div class="login-form">
-                <h2>Login</h2>
-                <form>
-                    <div class="input-group">
-                        <input type="text" placeholder="Username" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="password" placeholder="Password" required>
-                    </div>
-                    <button type="submit" class="login-btn">Sign In</button>
-                </form>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="close">
+          <img class="invert" src="assets/images/close.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img
+              width="110px"
+              class="invert"
+              src="assets/images/logo.svg"
+              alt="logo"
+            />
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="assets/images/home.svg" alt="Home" />Home
+            </li>
+            <li>
+              <img
+                class="invert"
+                src="assets/images/search.svg"
+                alt="search"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img
+              class="invert"
+              src="assets/images/playlist.svg"
+              alt="library"
+            />
+            <h2>Your Library</h2>
+          </div>
+          <footer class="footer">
+            <div>
+              <a
+                href="https://www.spotify.com/pk-en/legal/"
+                data-encore-id="textLink"
+                id=""
+                ><span data-encore-id="type">Legal</span></a
+              >
             </div>
+            <div>
+              <a
+                href="https://www.spotify.com/pk-en/safetyandprivacy/"
+                data-encore-id="textLink"
+                id=""
+                ><span data-encore-id="type"
+                  >Safety &amp; Privacy Center</span
+                ></a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/pk-en/legal/privacy-policy/"
+                data-encore-id="textLink"
+                id=""
+                ><span data-encore-id="type">Privacy Policy</span></a
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img
+                width="40"
+                class="invert hamburger"
+                src="assets/images/hamburger.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">
+              <a href="#" id="toggleForm">Sign up</a>
+            </button>
+            <button class="loginbtn"><a href="index.html">Home</a></button>
+          </div>
+        </div>
+
+        <div class="auth-container">
+          <div class="auth-header">
+            <h1 id="formTitle">Log in to Spotify</h1>
+            <div class="social-login">
+              <button class="social-btn google-btn">
+                <img
+                  src="assets/images/google.svg"
+                  alt="Google"
+                  class="social-icon"
+                />
+                Continue with Google
+              </button>
+              <button class="social-btn facebook-btn">
+                <img
+                  src="assets/images/facebook.svg"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+                Continue with Facebook
+              </button>
+            </div>
+            <div class="divider">
+              <span>or</span>
+            </div>
+          </div>
+
+          <form id="loginForm" class="auth-form">
+            <div class="form-group">
+              <label for="email">Email address or username</label>
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+              <a href="#" class="forgot-password">Forgot your password?</a>
+            </div>
+            <div class="remember-me">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+
+          <form id="signupForm" class="auth-form" style="display: none">
+            <div class="form-group">
+              <label for="signupEmail">Email address</label>
+              <input type="email" id="signupEmail" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input
+                type="password"
+                id="signupPassword"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="displayName">What should we call you?</label>
+              <input type="text" id="displayName" name="displayName" required />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of birth</label>
+              <div class="dob-inputs">
+                <input
+                  type="number"
+                  id="dobDay"
+                  name="day"
+                  placeholder="DD"
+                  min="1"
+                  max="31"
+                  required
+                />
+                <select id="dobMonth" name="month" required>
+                  <option value="" disabled selected>Month</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <!-- All months -->
+                </select>
+                <input
+                  type="number"
+                  id="dobYear"
+                  name="year"
+                  placeholder="YYYY"
+                  min="1900"
+                  max="2023"
+                  required
+                />
+              </div>
+            </div>
+            <div class="gender-selection">
+              <label>Gender</label>
+              <div class="gender-options">
+                <label
+                  ><input type="radio" name="gender" value="male" /> Male</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="female" />
+                  Female</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="non-binary" />
+                  Non-binary</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="other" />
+                  Other</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="prefer-not-to-say"
+                  />
+                  Prefer not to say</label
+                >
+              </div>
+            </div>
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree to the Spotify Terms and Conditions and Privacy
+                Policy</label
+              >
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+
+          <div class="auth-footer">
+            <p id="toggleText">
+              Don't have an account?
+              <a href="#" id="toggleLink">Sign up for Spotify</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-</body>
+    <script src="assets/js/login.js"></script>
+  </body>
 </html>

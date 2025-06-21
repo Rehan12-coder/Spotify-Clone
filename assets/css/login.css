@@ -1,0 +1,233 @@
+/* Auth Container */
+.auth-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+}
+
+.auth-header h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.02);
+}
+
+.google-btn {
+    background-color: white;
+    color: #333;
+}
+
+.facebook-btn {
+    background-color: #1877f2;
+    color: white;
+}
+
+.social-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #b3b3b3;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #535353;
+}
+
+.divider span {
+    padding: 0 15px;
+}
+
+/* Forms */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #535353;
+    background-color: #121212;
+    color: white;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* DOB Inputs */
+.dob-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.dob-inputs input, .dob-inputs select {
+    flex: 1;
+}
+
+.dob-inputs select {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #535353;
+    background-color: #121212;
+    color: white;
+}
+
+/* Gender Options */
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Terms and Remember Me */
+.terms, .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.terms label, .remember-me label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #1ed760;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1fdf64;
+    transform: scale(1.02);
+}
+
+/* Forgot Password */
+.forgot-password {
+    color: #b3b3b3;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.forgot-password:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Auth Footer */
+.auth-footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #b3b3b3;
+}
+
+.auth-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .auth-header h1 {
+        font-size: 24px;
+    }
+    
+    .dob-inputs {
+        flex-direction: column;
+    }
+    
+    .gender-options {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        margin: 10px auto;
+    }
+    
+    .social-btn {
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
